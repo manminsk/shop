@@ -1,0 +1,23 @@
+
+.position {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    width: 1440px;
+    height: 680px;
+    background-color: #EFEEEC;
+}
+
+.menu {
+    color: #82B5D1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline;
+}
