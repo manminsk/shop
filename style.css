@@ -1,3 +1,21 @@
+@font-face {
+    font-family: OpenSans-CondLight;
+    src: url("fonts/OpenSans-CondLight.ttf");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: PoiretOne-Regular;
+    src: url("fonts/PoiretOne-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+body {
+    margin: 0;
+}
 
 .position {
     display: flex;
@@ -5,19 +23,142 @@
 }
 
 .info {
+    position: relative;
     width: 1440px;
     height: 680px;
     background-color: #EFEEEC;
+    padding-top: 20px;
 }
 
-.menu {
+.menu a {
     color: #82B5D1;
 }
 
+nav a {
+    text-decoration: none;
+}
+
+.position-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.position-list__size {
+    font-size: 34px;
+    line-height: 46px;
+}
+
+.position-list__navigation {
+    width: 250px;
+    font-size: 24px;
+
+}
+
+.position-list__navigation ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    font-family: OpenSans-CondLight, sans-serif;
+}
+
+
+.position-list__cart {
+    width: 115px;
+    height: 24px;
+}
+
+.position-list__cart ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: inline;
+}
+
 ul {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
 .menu li {
     display: inline;
 }
+
+.product {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-top: 119px;
+}
+
+.text {
+    position: relative;
+    margin-right: 41px;
+}
+
+h1 {
+    font-family: PoiretOne-Regular, sans-serif;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 84px;
+    color: #344854;
+    margin: 0;
+}
+
+h2 {
+    font-family: OpenSans-CondLight, sans-serif;
+    font-weight: normal;
+    line-height: 38px;
+    font-size: 28px;
+    color: #344854;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.butt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 40px;
+    width: 187px;
+    height: 58px;
+    background-color: #82B5D1;
+}
+
+.text a {
+    font-family: OpenSans-CondLight, sans-serif;
+    font-size: 28px;
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 38px
+}
+
+.table {
+    margin-right: 80px;
+}
+
+.slide {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 1440px;
+    margin-bottom: 55px;
+}
+
+.slide1 {
+    margin-right: 8px;
+}
+
+.slide2 {
+    margin-right: 8px;
+}
+
