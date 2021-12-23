@@ -20,7 +20,12 @@ body {
 .position {
     display: flex;
     justify-content: center;
+    flex-flow: column;
 }
+
+
+                /*block №1*/
+
 
 .info {
     position: relative;
@@ -103,7 +108,7 @@ ul {
     margin-right: 41px;
 }
 
-h1 {
+.text h1 {
     font-family: PoiretOne-Regular, sans-serif;
     font-weight: normal;
     font-size: 72px;
@@ -112,7 +117,7 @@ h1 {
     margin: 0;
 }
 
-h2 {
+.text h2 {
     font-family: OpenSans-CondLight, sans-serif;
     font-weight: normal;
     line-height: 38px;
@@ -162,3 +167,65 @@ h2 {
     margin-right: 8px;
 }
 
+
+                /*block №2*/
+
+
+
+.category {
+    display: flex;
+    flex-direction: row;
+}
+
+.small-furniture {
+    position: relative;
+}
+
+.fixtures {
+    display: flex;
+    flex-basis: 100%;
+    position: relative;
+}
+
+.small-furniture h1 {
+    position: absolute;
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    color: #344854;
+    line-height: 42px;
+    font-weight: normal;
+    top: 40px;
+    right: 30px;
+    margin: 0;
+}
+
+.fixtures h1 {
+    position: absolute;
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #344854;
+    top: 40px;
+    left: 30px;
+    margin: 0;
+}
+
+.large-furniture {
+    position: relative;
+}
+
+.large-furniture h1 {
+    position: absolute;
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #344854;
+    top: 40px;
+    left: 22px;
+    margin: 0;
+}
