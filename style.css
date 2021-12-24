@@ -457,3 +457,121 @@ ul {
     text-decoration: none;
     color: #E6F0F6;
 }
+
+
+                /*Block №4*/
+
+
+.best {
+    width: 1440px;
+    height: 682px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.best__text {
+    display: flex;
+    justify-content: flex-end;
+    width: 1440px;
+}
+
+.best__text h1 {
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #344854;
+    margin: 0 80px 40px 0;
+}
+
+.best-products__position {
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 80px 0 80px;
+}
+
+.black-lamp h2 {
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #344854;
+    margin: 10px 0 0 0;
+}
+
+.black-lamp p {
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #6891A7;
+    margin: 8px 0 0 0;
+}
+
+.table1 h2 {
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #344854;
+    margin: 10px 0 0 0;
+}
+
+.table1 p {
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #6891A7;
+    margin: 8px 0 0 0;
+}
+
+.wooden-chair1 h2 {
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #344854;
+    margin: 10px 0 0 0;
+}
+
+.wooden-chair1 p {
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #6891A7;
+    margin: 8px 0 0 0;
+}
+
+.chair-soft h2 {
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #344854;
+    margin: 10px 0 0 0;
+}
+
+.chair-soft p {
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #6891A7;
+    margin: 8px 0 0 0;
+}
