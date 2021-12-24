@@ -14,13 +14,13 @@
 
 
 body {
+    display: flex;
+    justify-content: center;
     margin: 0;
 }
 
 .position {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
+    flex-direction: column;
 }
 
 
@@ -31,7 +31,7 @@ body {
     position: relative;
     width: 1440px;
     height: 680px;
-    background-color: #EFEEEC;
+    background: #EFEEEC;
     padding-top: 20px;
 }
 
@@ -175,6 +175,8 @@ ul {
 .category {
     display: flex;
     flex-direction: row;
+    width: 1440px;
+    height: 680px;
 }
 
 .small-furniture {
@@ -183,7 +185,6 @@ ul {
 
 .fixtures {
     display: flex;
-    flex-basis: 100%;
     position: relative;
 }
 
@@ -228,4 +229,142 @@ ul {
     top: 40px;
     left: 22px;
     margin: 0;
+}
+
+                /*block №3*/
+
+
+.popular {
+    width: 1440px;
+    height: 682px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popular__text {
+    display: flex;
+    justify-content: flex-end;
+    width: 1440px;
+}
+
+.popular__text h1 {
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #344854;
+    margin: 0 75px 40px 0;
+}
+
+.popular-products__position {
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 80px 0 80px;
+}
+
+.white-lamp h2 {
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #344854;
+    margin: 10px 0 0 0;
+}
+
+.white-lamp p {
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #6891A7;
+    margin: 8px 0 0 0;
+}
+
+.grey-lamp h2 {
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #344854;
+    margin: 10px 0 0 0;
+}
+
+.grey-lamp p {
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #6891A7;
+    margin: 8px 0 0 0;
+}
+
+.wooden-chair h2 {
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #344854;
+    margin: 10px 0 0 0;
+}
+
+.wooden-chair p {
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #6891A7;
+    margin: 8px 0 0 0;
+}
+
+.new-stools {
+    position: relative;
+}
+
+.new-stools h2 {
+    position: absolute;
+    top: 0;
+    font-family: PoiretOne-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #1A242A;
+    letter-spacing: -1px;
+    margin: 45px 27px 323px 24px;
+}
+
+.new-stools a {
+    display: flex;
+    justify-content: center;
+}
+
+.new-stools__butt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 225px;
+    height: 58px;
+    background: #EFEEEC;
+    bottom: 0;
+    margin-bottom: 45px;
+    font-family: OpenSans-CondLight, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 38px;
+    color: #4E6D7D;
+
 }
