@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Мебель</title>
 </head>
@@ -25,13 +25,36 @@
                     </div>
                     <div class="position-list__cart">
                         <ul>
-                            <li><a href="#"><img src="images/like.png" alt="нравится"></a></li>
-                            <li><a href="#"><img src="images/search.png" alt="поиск"></a></li>
-                            <li><a href="#"><img src="images/cart.png" alt="корзина"></a></li>
+                            <li><div><a href="#"><img src="images/like.png" alt="нравится" class="like"></a></div></li>
+                            <li><div><a href="#"><img src="images/search.png" alt="поиск"></a></div></li>
+                            <li><div><a href="#"><img src="images/cart.png" alt="корзина"></a></div></li>
                         </ul>
                     </div>
                 </nav>
             </div>
+
+<!--                                Mobile-Version-->
+
+            <div class="menu-mobile">
+                <nav class="position-list__mobile">
+                    <a href="#"><div class="menu-burger">
+                        <img src="images/menu.png" alt="меню">
+                    </div></a>
+                    <div>
+                        <ul class="position-list__hite">
+                            <li><a href="#">hite</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-position__cart">
+                        <ul>
+                            <li><div><a href="#"><img src="images/search.png" alt="поиск"></a></div></li>
+                            <li><div><a href="#"><img src="images/cart.png" alt="корзина"></a></div></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+<!--                                    Mobile-Version-->
 
             <div class="product">
                 <div class="text">
@@ -39,37 +62,32 @@
                     <h2>Описание товара</h2>
                     <a href="#"><div class="butt">Подробнее</div></a>
                 </div>
-
                 <div class="table">
                     <img src="images/table.png" alt="стол">
                 </div>
             </div>
-
             <div class="slide">
                 <img src="images/ellipse1.png" alt="слайд" class="slide1">
                 <img src="images/ellipse2.png" alt="слайд" class="slide2">
                 <img src="images/ellipse3.png" alt="слайд">
             </div>
         </div>
-
         <div class="category">
             <a href="#"><div class="small-furniture">
-                <img src="images/foto1.png" alt="мелкая мебель">
+                <img src="images/foto1.png" alt="мелкая мебель" class="small-furniture__position">
                 <h1>Мелкая мебель</h1>
             </div></a>
-
-            <div>
+            <div class="category__position">
                 <a href="#"><div class="fixtures">
-                    <img src="images/foto2.png" alt="светильники">
+                    <img src="images/foto2.png" alt="светильники" class="fixtures__position">
                     <h1>Светильники</h1>
                 </div></a>
                 <a href="#"><div class="large-furniture">
-                    <img src="images/foto3.png" alt="крупная мебель">
+                    <img src="images/foto3.png" alt="крупная мебель" class="large-furniture__position">
                     <h1>Крупная мебель</h1>
                 </div></a>
             </div>
         </div>
-
         <div class="popular">
             <div class="popular__text"><h1>Популярные товары</h1></div>
             <div class="popular-products">
@@ -98,6 +116,44 @@
             </div>
         </div>
 
+<!--                            Mobile-Version-->
+
+        <div class="mobile-popular">
+            <div class="mobile__new-stools">
+                <img src="images/foto7.png" alt="новые табуреты">
+                <h2>Новые табуреты</h2>
+                <a href="#"><div class="mobile__new-stools__butt">Подробнее</div></a>
+            </div>
+            <div class="mobile-position__products">
+                <div class="mobile__popular__text"><h1>Популярные товары</h1></div>
+                <div class="mobile__popular-products">
+                    <div class="mobile__popular-products__position">
+                        <a href="#"><div class="white-lamp">
+                            <img src="images/foto4.png" alt="белая лампа">
+                            <h2>Белая лампа</h2>
+                            <p>$512</p>
+                        </div></a>
+                        <a href="#"><div class="grey-lamp">
+                            <img src="images/foto5.png" alt="серая лампа">
+                            <h2>Серая лампа</h2>
+                            <p>$367</p>
+                        </div></a>
+                        <a href="#"><div class="wooden-chair">
+                            <img src="images/foto6.png" alt="деревянный стул">
+                            <h2>Деревянный стул</h2>
+                            <p>$586</p>
+                        </div></a>
+                        <a href="#"><div class="fantom">
+                            <h2>Новые табуреты</h2>
+                            <p>$652</p>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--                                    Mobile-Version-->
+
          <div class="discount">
             <div class="discount-position">
                 <div class="image">
@@ -115,7 +171,6 @@
                 </div>
             </div>
          </div>
-
         <div class="best">
             <div class="best__text"><h1>Лучшие товары</h1></div>
             <div class="best-products">
@@ -143,12 +198,11 @@
                 </div>
             </div>
         </div>
-
         <div class="subscription">
             <div>
                 <h1>Подпишись и получи скидку 30%</h1>
                 <div class="subscription__position">
-                    <div>
+                    <div class="subscription-input">
                         <label>
                             <input type="text" placeholder="Введите вашу почту"/>
                         </label>
@@ -160,7 +214,6 @@
                 </div>
             </div>
         </div>
-
         <div class="footer">
                 <div class="footer__hite">
                     <a href="#"><h1>hite</h1></a>
@@ -197,9 +250,9 @@
                     </label>
                     <a href="#"><div class="new-products__butt">Подписаться</div></a>
                 </div>
-            <div class="copy">
-                hite. com 2021 &copy;
-            </div>
+                <div class="copy">
+                    hite. com 2021 &copy;
+                </div>
         </div>
     </div>
 </body>
