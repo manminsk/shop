@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css" type="text/css">
+
     <title>Мебель</title>
 </head>
 <body>
     <div class="position">
         <div class="info">
-            <div class="menu">
+
+            <div class="show">
+                <div class="search">
+                    <label>
+                        <input type="text" id="input-search" placeholder="Я ищу...">
+                    </label>
+                </div>
+            </div>
+
+
+
+               <div class="menu">
                 <nav class="position-list">
                     <div>
                         <ul class="position-list__size">
@@ -26,7 +38,7 @@
                     <div class="position-list__cart">
                         <ul>
                             <li><div><a href="#"><img src="images/like.png" alt="нравится" class="like"></a></div></li>
-                            <li><div><a href="#"><img src="images/search.png" alt="поиск"></a></div></li>
+                            <li><div><a href="#"><img src="images/search.png" alt="поиск" id="icon-search"></a></div></li>
                             <li><div><a href="#"><img src="images/cart.png" alt="корзина"></a></div></li>
                         </ul>
                     </div>
@@ -37,9 +49,22 @@
 
             <div class="menu-mobile">
                 <nav class="position-list__mobile">
-                    <a href="#"><div class="menu-burger">
-                        <img src="images/menu.png" alt="меню">
-                    </div></a>
+                    <div class="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-burger">
+                        <nav>
+                            <li><a href="#" class="color">Главная</a></li>
+                            <li><a href="#" class="color">Магазин</a></li>
+                            <li><a href="#" class="color">О нас</a></li>
+                        </nav>
+                    </div>
+
+
+
+
                     <div>
                         <ul class="position-list__hite">
                             <li><a href="#">hite</a></li>
@@ -60,9 +85,25 @@
                 <div class="text">
                     <h1>Журнальный стол</h1>
                     <h2>Описание товара</h2>
-                    <a href="#"><div class="butt">Подробнее</div></a>
+                    <button id="myBtn" class="butt">Подробнее</button>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <div class="position-span">
+                                <span class="close">&times</span>
+                            </div>
+                            <div>
+                                <p>Вы действительно хотите узнать подробности?</p>
+                            </div>
+
+                            <div id="position-button">
+                                <button class="ok">ok</button>
+                                <button class="cancel">отмена</button>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="table">
+                <div class="table" id="table-one">
                     <img src="images/table.png" alt="стол">
                 </div>
             </div>
@@ -165,8 +206,12 @@
                         <h1>Диван кожанный</h1>
                         <p>Современный дизайн. Рассчитаем стоимость выгодно. Все модели в<br>
                             наличии в салоне на 1300 м². Много вариантов обивки.<br> Экологичные
-                            материалы.</p>
-                        <a href="#"><div class="discount-position__butt">Подробнее</div></a>
+                            материалы.<span id="dots">Респектабельность, привлекательный
+                            внешний вид.<br> Мягкая кожаная мебель – это
+                            показатель богатства, высокого статуса и<br> эталон стиля. Изделия имеют высокую
+                            стоимость, поэтому для обустройства<br> современного, роскошного интерьера – это то,
+                            что вам нужно.</span></p>
+                        <button class="discount-position__butt" id="btn" onclick="readMore()">Подробнее</button>
                     </div>
                 </div>
             </div>
@@ -175,29 +220,75 @@
             <div class="best__text"><h1>Лучшие товары</h1></div>
             <div class="best-products">
                 <div class="best-products__position">
-                    <a href="#"><div class="black-lamp">
+                    <a href="#"><div class="black-lamp slider-item">
                         <img src="images/black-lamp.png" alt="черная лампа">
                         <h2>Черная лампа</h2>
                         <p>$512</p>
                     </div></a>
-                    <a href="#"><div class="table1">
+                    <a href="#"><div class="black-lamp slider-item">
+                        <img src="images/black-lamp.png" alt="черная лампа">
+                        <h2>Черная лампа</h2>
+                        <p>$512</p>
+                    </div></a>
+                    <a href="#"><div class="table1 slider-item">
                         <img src="images/table1.png" alt="стол">
                         <h2>Серая лампа</h2>
                         <p>$367</p>
                     </div></a>
-                    <a href="#"><div class="wooden-chair1">
+                    <a href="#"><div class="wooden-chair1 slider-item">
                         <img src="images/wooden-chair.png" alt="деревянный стул">
                         <h2>Деревянный стул</h2>
                         <p>$586</p>
                     </div></a>
-                    <a href="#"><div class="chair-soft">
+                    <a href="#"><div class="chair-soft slider-item">
+                        <img src="images/chair-soft.png" alt="стул софт">
+                        <h2>Новые табуреты</h2>
+                        <p>958$</p>
+                    </div></a>
+                    <a href="#"><div class="black-lamp slider-item">
+                        <img src="images/black-lamp.png" alt="черная лампа">
+                        <h2>Черная лампа</h2>
+                        <p>$512</p>
+                    </div></a>
+                    <a href="#"><div class="table1 slider-item">
+                        <img src="images/table1.png" alt="стол">
+                        <h2>Серая лампа</h2>
+                        <p>$367</p>
+                    </div></a>
+                    <a href="#"><div class="wooden-chair1 slider-item">
+                        <img src="images/wooden-chair.png" alt="деревянный стул">
+                        <h2>Деревянный стул</h2>
+                        <p>$586</p>
+                    </div></a>
+                    <a href="#"><div class="chair-soft slider-item">
                         <img src="images/chair-soft.png" alt="стул софт">
                         <h2>Новые табуреты</h2>
                         <p>958$</p>
                     </div></a>
                 </div>
             </div>
+            <div class="slider-buttons">
+                <button class="btn-prev">prev</button>
+                <button class="btn-next">next</button>
+            </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="subscription">
             <div>
                 <h1>Подпишись и получи скидку 30%</h1>
@@ -255,5 +346,6 @@
                 </div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
