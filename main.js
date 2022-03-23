@@ -1,22 +1,20 @@
-// Получить модальный
-let modal = document.getElementById("myModal");
+const modal = document.getElementById("modal-window");
 
-// Получить кнопку, которая открывает модальный
-let btn = document.getElementById("myBtn");
+const btn = document.getElementById("button-menu");
 
-// Получить элемент <span>, который закрывает модальный
-let span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close")[0];
 
-let btnOk = document.getElementsByClassName("ok")[0];
+const btnOk = document.getElementsByClassName("ok")[0];
 
-let cancel = document.getElementsByClassName("cancel")[0];
+const cancel = document.getElementsByClassName("cancel")[0];
 
-// Когда пользователь нажимает на кнопку, откройте модальный
+const lockModal = document.getElementsByClassName("body");
+
 btn.onclick = function() {
     modal.style.display = "block";
+    lockModal.classList.toggle('lock');
 }
 
-// Когда пользователь нажимает на <span> (x), закройте модальное окно
 span.onclick = function() {
     modal.style.display = "none";
 }
@@ -35,19 +33,20 @@ document.addEventListener('keydown', function(e){
     }
 })
 
-// Когда пользователь щелкает в любом месте за пределами модального, закройте его
 window.onclick = function(event) {
     if (event.target === modal) {
         modal.style.display = "none";
     }
 }
 
-//Информация о диване
+                                // Show text
 
+const btn2 = document.getElementById('btn');
 
-function readMore () {
-    let dots = document.getElementById("dots");
-    let btn = document.getElementById("btn");
+btn2.addEventListener('click', function() {
+
+const dots = document.getElementById("dots");
+const btn = document.getElementById("btn");
 
     if(dots.style.display === "none") {
         dots.style.display = "inline";
@@ -56,10 +55,7 @@ function readMore () {
         dots.style.display = "none";
         btn.innerHTML = "Подробнее";
     }
-}
-
-
-
+})
 
                             //Sliders
 
@@ -111,29 +107,23 @@ checkBtns();
 
                             //Menu
 
-let menuBtn = document.querySelector('.menu-btn');
-let menuBurger = document.querySelector('.menu-burger');
+const menuBtn = document.querySelector('.menu-btn');
+const menuBurger = document.querySelector('.menu-burger');
+const body = document.querySelector('body');
 
 menuBtn.addEventListener('click', function(){
     menuBtn.classList.toggle('active');
     menuBurger.classList.toggle('active');
+    body.classList.toggle('lock');
 });
-
-let active = document.querySelector('.active');
-let text = document.querySelector('.text');
-let table = document.querySelector("#table-one");
-let slide = document.querySelector('.slide');
-
-
 
 
                     //Search
 
-let search = document.getElementById('icon-search');
-let show = document.querySelector('.show');
+const search = document.getElementById('icon-search');
+const show = document.querySelector('.hide');
 
 
 search.addEventListener("click", function ()  {
-    show.classList.toggle('show');
+    show.classList.toggle('hide');
 });
-

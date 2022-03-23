@@ -2,25 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css" type="text/css">
-
     <title>Мебель</title>
 </head>
 <body>
     <div class="position">
-        <div class="info">
 
-            <div class="show">
+        <!--                                Mobile-Version-->
+
+        <div class="menu-mobile">
+            <nav class="position-list__mobile">
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-burger">
+                    <nav>
+                        <li><a href="#" class="color">Главная</a></li>
+                        <li><a href="#" class="color">Магазин</a></li>
+                        <li><a href="#" class="color">О нас</a></li>
+                    </nav>
+                </div>
+                <div>
+                    <ul class="position-list__hite">
+                        <li><a href="#">hite</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-position__cart">
+                    <ul>
+                        <li><div><a href="#"><img src="images/search.png" alt="поиск"></a></div></li>
+                        <li><div><a href="#"><img src="images/cart.png" alt="корзина"></a></div></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!--                                    Mobile-Version-->
+
+        <div class="info">
+            <div class="hide">
                 <div class="search">
                     <label>
                         <input type="text" id="input-search" placeholder="Я ищу...">
                     </label>
+                    <a href="" class="button-search"><button>Найти</button></a>
                 </div>
             </div>
-
-
-
                <div class="menu">
                 <nav class="position-list">
                     <div>
@@ -44,49 +73,12 @@
                     </div>
                 </nav>
             </div>
-
-<!--                                Mobile-Version-->
-
-            <div class="menu-mobile">
-                <nav class="position-list__mobile">
-                    <div class="menu-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="menu-burger">
-                        <nav>
-                            <li><a href="#" class="color">Главная</a></li>
-                            <li><a href="#" class="color">Магазин</a></li>
-                            <li><a href="#" class="color">О нас</a></li>
-                        </nav>
-                    </div>
-
-
-
-
-                    <div>
-                        <ul class="position-list__hite">
-                            <li><a href="#">hite</a></li>
-                        </ul>
-                    </div>
-                    <div class="mobile-position__cart">
-                        <ul>
-                            <li><div><a href="#"><img src="images/search.png" alt="поиск"></a></div></li>
-                            <li><div><a href="#"><img src="images/cart.png" alt="корзина"></a></div></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-
-<!--                                    Mobile-Version-->
-
             <div class="product">
                 <div class="text">
                     <h1>Журнальный стол</h1>
                     <h2>Описание товара</h2>
-                    <button id="myBtn" class="butt">Подробнее</button>
-                    <div id="myModal" class="modal">
+                    <button id="button-menu" class="butt">Подробнее</button>
+                    <div id="modal-window" class="modal">
                         <div class="modal-content">
                             <div class="position-span">
                                 <span class="close">&times</span>
@@ -109,12 +101,12 @@
             </div>
             <div class="slide">
                 <img src="images/ellipse1.png" alt="слайд" class="slide1">
-                <img src="images/ellipse2.png" alt="слайд" class="slide2">
+                <img src="images/ellipse2.png" alt="слайд" class="slide1">
                 <img src="images/ellipse3.png" alt="слайд">
             </div>
         </div>
         <div class="category">
-            <a href="#"><div class="small-furniture">
+            <a href="#" id="kl"><div class="small-furniture">
                 <img src="images/foto1.png" alt="мелкая мебель" class="small-furniture__position">
                 <h1>Мелкая мебель</h1>
             </div></a>
@@ -208,15 +200,27 @@
                             наличии в салоне на 1300 м². Много вариантов обивки.<br> Экологичные
                             материалы.<span id="dots">Респектабельность, привлекательный
                             внешний вид.<br> Мягкая кожаная мебель – это
-                            показатель богатства, высокого статуса и<br> эталон стиля. Изделия имеют высокую
-                            стоимость, поэтому для обустройства<br> современного, роскошного интерьера – это то,
+                            показатель богатства, высокого статуса и<br> эталон стиля современного, роскошного интерьера – это то,
                             что вам нужно.</span></p>
-                        <button class="discount-position__butt" id="btn" onclick="readMore()">Подробнее</button>
+                        <button class="discount-position__butt" id="btn">Подробнее</button>
                     </div>
                 </div>
             </div>
          </div>
-        <div class="best">
+
+         <div id="position-text">
+             <div id="position-tabs">
+                 <div><h3>Характеристики</h3></div>
+                 <div><h3>Отзывы</h3></div>
+             </div>
+             <div id="specifications">
+                 <p>Для современного мира курс на социально-ориентированный национальный<br> проект является качественно
+                     новой ступенью системы обучения кадров, <br>соответствующей насущным потребностям, качественно новой
+                     ступенью системы<br> обучения кадров, соответствующей насущным потребностям. </p>
+             </div>
+         </div>
+
+         <div class="best">
             <div class="best__text"><h1>Лучшие товары</h1></div>
             <div class="best-products">
                 <div class="best-products__position">
@@ -272,23 +276,6 @@
                 <button class="btn-next">next</button>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div class="subscription">
             <div>
                 <h1>Подпишись и получи скидку 30%</h1>
