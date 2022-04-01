@@ -10,32 +10,42 @@ const cancel = document.getElementsByClassName("cancel")[0];
 
 const lockModal = document.getElementsByClassName("body");
 
+const bodyScroll = document.querySelector('body');
+
+
+
 btn.onclick = function() {
     modal.style.display = "block";
+    bodyScroll.style.overflow = "hidden";
     lockModal.classList.toggle('lock');
 }
 
 span.onclick = function() {
     modal.style.display = "none";
+    bodyScroll.style.overflow = "auto";
 }
 
 btnOk.onclick = function() {
     modal.style.display = "none";
+    bodyScroll.style.overflow = "auto";
 }
 
 cancel.onclick = function () {
     modal.style.display = "none";
+    bodyScroll.style.overflow = "auto";
 }
 
 document.addEventListener('keydown', function(e){
     if(e.key === 'Escape') {
         modal.style.display = "none"
+        bodyScroll.style.overflow = "auto";
     }
 })
 
 window.onclick = function(event) {
     if (event.target === modal) {
         modal.style.display = "none";
+        bodyScroll.style.overflow = "auto";
     }
 }
 
@@ -127,3 +137,26 @@ const show = document.querySelector('.hide');
 search.addEventListener("click", function ()  {
     show.classList.toggle('hide');
 });
+
+
+                    //Tabs
+
+document.querySelectorAll('.tabs-triggers__item').forEach((item) =>
+    item.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = e.target.getAttribute('href').replace('#', '');
+
+        document.querySelectorAll('.tabs-triggers__item').forEach(
+            (child) => child.classList.remove('tabs-triggers__item--active')
+        );
+
+        document.querySelectorAll('.tabs-content__item').forEach(
+            (child) => child.classList.remove('tabs-content__item--active')
+        );
+
+        item.classList.add('tabs-triggers__item--active');
+        document.getElementById(id).classList.add('tabs-content__item--active');
+    })
+);
+
+document.querySelector('.tabs-triggers__item').click();
