@@ -8,16 +8,14 @@ const btnOk = document.getElementsByClassName("ok")[0];
 
 const cancel = document.getElementsByClassName("cancel")[0];
 
-const lockModal = document.getElementsByClassName("body");
-
-const bodyScroll = document.querySelector('body');
+const bodyScroll = document.querySelector("body");
 
 
 
 btn.onclick = function() {
     modal.style.display = "block";
     bodyScroll.style.overflow = "hidden";
-    lockModal.classList.toggle('lock');
+    bodyScroll.classList.toggle('lock');
 }
 
 span.onclick = function() {

@@ -29,7 +29,7 @@ body {
     align-items: center;
     position: fixed;
     top: 0;
-    width: 70%;
+    width: 100%;
     height: 80px;
     z-index: 999999999999999;
 }
@@ -39,8 +39,20 @@ body {
 }
 
 .button-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: OpenSans-CondLight, sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 65px;
+    height: 30px;
     margin-left: 25px;
+    background-color: #82B5D1;
+    border: none;
+    cursor: pointer;
 }
+
 
 #input-search {
     padding-left: 10px;
@@ -182,6 +194,7 @@ ul {
     background-color: #82B5D1;
     border: none;
     cursor: pointer;
+    z-index: 99999999999999999999999;
 }
 
 .modal {
@@ -600,6 +613,11 @@ body.lock {
     justify-content: center;
     height: 230px;
     background-color: #EFEEEC;
+    width: 100%;
+}
+
+.tabs {
+    width: 50%;
 }
 
 .tabs-triggers {
@@ -608,6 +626,7 @@ body.lock {
 }
 
 .tabs-triggers__item {
+    font-family: OpenSans-CondLight, sans-serif;
     text-decoration: none;
     text-align: center;
     color: black;
@@ -629,7 +648,7 @@ body.lock {
 }
 
 .tabs-content {
-    width: 510px;
+    /*width: 510px;*/
     text-align: justify;
 }
 
@@ -642,6 +661,7 @@ body.lock {
 
 
 .best {
+    position: relative;
     width: 1440px;
     height: 682px;
     background: #FFFFFF;
@@ -688,48 +708,34 @@ body.lock {
     min-width: 360px;
 }
 
-.slider-buttons {
-    text-align: center;
-    width: 100%;
-    height: 40px;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.btn-next {
+    background: url("images/right.jfif") 0 0 / 100% no-repeat;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    color: white;
+    text-transform: uppercase;
 }
 
 .btn-prev {
-    width: 100px;
-    height: 30px;
+    background: url("images/left.jfif")0 0 / 100% no-repeat;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     cursor: pointer;
     border: none;
-    background-color: rgba(121, 241, 189, 0.95);
+    color: white;
     text-transform: uppercase;
-}
-
-.btn-next {
-    width: 100px;
-    height: 30px;
-    cursor: pointer;
-    border: none;
-    background-color: rgba(121, 241, 189, 0.95);
-    text-transform: uppercase;
-}
-
-.btn-next:hover {
-    background: #b4adee;
-    width: 110px;
-    height: 35px;
-    transition: .5s;
-    border-radius: 15px;
-}
-
-.btn-prev:hover {
-    background: #b4adee;
-    width: 110px;
-    height: 35px;
-    transition: .5s;
-    border-radius: 15px;
 }
 
 .black-lamp h2 {
@@ -887,11 +893,11 @@ hr {
 
 .footer {
     position: relative;
-    width: 1280px;
+    width: 100%;
     height: 373px;
     background: #FFFFFF;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     padding: 0 80px 0 80px;
 }
@@ -1120,6 +1126,11 @@ hr {
         max-width: 529px;
     }
 
+    .tabs-triggers__item {
+        font-size: 30px;
+        margin-right: 0;
+    }
+
     .best {
         width: 100%;
     }
@@ -1176,6 +1187,11 @@ hr {
 
     .best {
         width: 100%;
+    }
+
+    .tabs-triggers__item {
+        font-size: 30px;
+        margin-right: 0;
     }
 
     .discount-position {
@@ -1292,6 +1308,11 @@ hr {
 
     .discount-position__info p {
         max-width: 529px;
+    }
+
+    .tabs-triggers__item {
+        font-size: 30px;
+        margin-right: 0;
     }
 
     .best {
@@ -1469,6 +1490,15 @@ hr {
         display:block;
         max-width:100%;
         height:auto;
+    }
+
+    .tabs {
+        width: 60%;
+    }
+
+    .tabs-triggers__item {
+        font-size: 30px;
+        margin-right: 0;
     }
 
     .best {
@@ -1718,6 +1748,15 @@ hr {
     .discount-position__butt {
         width: 50%;
         height: 15%;
+    }
+
+    .tabs {
+        width: 70%;
+    }
+
+    .tabs-triggers__item {
+        font-size: 30px;
+        margin-right: 0;
     }
 
     .best {
@@ -1987,6 +2026,15 @@ hr {
 
     .discount-position__butt {
         margin-bottom: 20px;
+    }
+
+    .tabs {
+        width: 70%;
+    }
+
+    .tabs-triggers__item {
+        font-size: 30px;
+        margin-right: 0;
     }
 
     .best {
@@ -2366,6 +2414,19 @@ hr {
         display: flex;
         justify-content: center;
         margin-bottom: 10px;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .tabs {
+        width: 90%;
+    }
+
+    .tabs-triggers__item {
+        font-size: 25px;
+        margin-right: 0;
     }
 
     .best {
@@ -3003,8 +3064,14 @@ hr {
         height: auto;
     }
 
+    .tabs {
+        width: 95%;
+        padding-bottom: 20px;
+    }
+
     .tabs-triggers__item {
-        font-size: 20px;
+        font-size: 25px;
+        margin-right: 10px;
     }
 
     .tabs-content__item p {
