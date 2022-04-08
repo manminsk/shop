@@ -67,6 +67,7 @@ body {
 
 .position {
     flex-direction: column;
+    width: 100%;
 }
 
 
@@ -899,7 +900,6 @@ hr {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    padding: 0 80px 0 80px;
 }
 
 .footer__hite {
@@ -1075,6 +1075,10 @@ hr {
 @media screen and (min-width: 1440px) {
     .position {
         width: 100%;
+    }
+
+    #input-search {
+        width: 1000px;
     }
 
     .product {
@@ -1253,6 +1257,10 @@ hr {
        overflow: hidden;
    }
 
+    #input-search {
+        width: 900px;
+    }
+
     .info {
         width: 100%;
     }
@@ -1393,6 +1401,10 @@ hr {
          width: 100%;
          height: 640px;
      }
+
+    #input-search {
+        width: 700px;
+    }
 
      .position-list {
          margin: 0 30px 0 30px;
@@ -1611,6 +1623,10 @@ hr {
     .info {
         width: 100%;
         height: 630px;
+    }
+
+    #input-search {
+        width: 600px;
     }
 
     .position-list {
@@ -1849,6 +1865,14 @@ hr {
         height: 480px;
     }
 
+    .search {
+        width: 100%;
+    }
+
+    #input-search {
+        width: 400px;
+    }
+
     .position-list {
         margin: 0 15px 0 15px;
     }
@@ -1908,6 +1932,10 @@ hr {
         width: 50%;
         height: 45%;
         margin-top: 10px;
+    }
+
+    .modal-text p {
+        margin-bottom: 5px;
     }
 
     .slide {
@@ -2201,6 +2229,10 @@ hr {
         height: 430px;
     }
 
+    #input-search {
+        width: 300px;
+    }
+
     .position-list {
         margin: 0 15px 0 15px;
     }
@@ -2260,6 +2292,18 @@ hr {
         width: 50%;
         height: 45%;
         margin-top: 10px;
+    }
+
+    .modal-text p {
+        margin-bottom: 5px;
+    }
+
+    .ok {
+        width: 70px;
+    }
+
+    .cancel {
+        width: 70px;
     }
 
     .slide {
@@ -2457,6 +2501,17 @@ hr {
         width: 100%;
     }
 
+    .btn-next  {
+        width: 40px;
+        height: 40px;
+    }
+
+    .btn-prev  {
+        width: 40px;
+        height: 40px;
+    }
+
+
     .black-lamp {
         width: 200px;
     }
@@ -2610,7 +2665,7 @@ hr {
         width: 30px;
         height: 30px;
         position: relative;
-        z-index:2;
+        z-index:99999999;
         overflow: hidden;
     }
 
@@ -2633,22 +2688,23 @@ hr {
     }
 
     .menu-burger {
-        display: flex;
-        justify-content: flex-end;
+        display: none;
         position: absolute;
         top: 0;
-        right: 0;
-        width: 100%;
+        left: 0;
+        width: 94%;
         height: 100%;
         padding: 15px;
         background-color: gray;
         transform: translateX(100%);
-        transition: transform 0.5s;
+        transition: transform 1s;
         z-index: 1;
     }
 
     .menu-burger.active {
+        display: block;
         transform: translateX(0);
+        transition: transform 1s;
     }
 
     .menu-burger li {
@@ -2656,6 +2712,10 @@ hr {
         list-style-type: none;
         margin-bottom: 10px;
         border-bottom: 1px solid white;
+    }
+
+    .menu-burger nav {
+        float: right;
     }
 
     .color {
@@ -2677,6 +2737,9 @@ hr {
         transform: translate(-50%, -50%) rotate(-45deg);
     }
 
+    #input-search {
+        width: 180px;
+    }
 
     .popular {
         display: none;
@@ -2757,10 +2820,15 @@ hr {
     .table {
         position: relative;
         left: 110px;
+        z-index: 0;
     }
 
     .table img {
         width: 430px;
+    }
+
+    #button-menu {
+        z-index: 1;
     }
 
     .text {
@@ -2786,6 +2854,27 @@ hr {
         font-size: 20px;
     }
 
+    .modal {
+        z-index: 999999999;
+    }
+
+    .modal-content {
+        width: 220px;
+        margin-top: 100px;
+    }
+
+    .modal-text p {
+        margin-bottom: 5px;
+    }
+
+    .ok {
+        width: 70px;
+    }
+
+    .cancel {
+        width: 70px;
+    }
+
     .slide {
         width: 100%;
         margin-bottom: 35px;
@@ -2806,6 +2895,7 @@ hr {
     .category__position {
         display: flex;
         flex-direction: row;
+        height: 200px;
     }
 
     .category h1 {
@@ -2825,8 +2915,8 @@ hr {
     }
 
     .fixtures {
-        width: 160px;
-        height: 200px;
+        width: 100%;
+        height: 100%;
     }
 
     .fixtures img {
@@ -2834,12 +2924,12 @@ hr {
     }
 
     .large-furniture {
-        width: 250px;
-        height: 200px;
+        width: 100%;
+        height: 100%;
     }
 
     .large-furniture img {
-        width: 270px;
+        width: 100%;
         height: 100%;
     }
 
@@ -2852,7 +2942,7 @@ hr {
         font-size: 21px;
         width: 70px;
         line-height: 20px;
-        left: 50px;
+        left: 25%;
     }
 
     .mobile-popular {
@@ -3101,6 +3191,16 @@ hr {
     .best img {
         display: block;
         width: 100%;
+    }
+
+    .btn-next  {
+        width: 35px;
+        height: 35px;
+    }
+
+    .btn-prev  {
+        width: 35px;
+        height: 35px;
     }
 
     .black-lamp {
