@@ -195,7 +195,7 @@ ul {
     background-color: #82B5D1;
     border: none;
     cursor: pointer;
-    z-index: 99999999999999999999999;
+    z-index: 99999999999999999;
 }
 
 .modal {
@@ -215,13 +215,17 @@ body.lock {
     overflow: hidden;
 }
 
+#modal-window {
+    z-index: 99999999999999999999999999999999;
+}
+
 .modal-content {
     background-color: #EFEEEC;
     margin: 17% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 40%;
-    height: 15%;
+    height: 150px;
     position: relative;
 }
 
@@ -250,7 +254,7 @@ body.lock {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50%;
+    height: 40%;
 }
 
 .ok {

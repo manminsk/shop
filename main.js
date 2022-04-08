@@ -56,7 +56,7 @@ btn2.addEventListener('click', function() {
 const dots = document.getElementById("dots");
 const btn = document.getElementById("btn");
 
-    if(dots.style.display === "none") {
+    if(dots.style.display === "") {
         dots.style.display = "inline";
         btn.innerHTML = "Скрыть";
     } else {
